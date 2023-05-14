@@ -14,7 +14,7 @@ stages:
           - task: ShellScript@2  
             inputs:
               scriptPath: 'shell.sh'
-  - stage: run script on microsoft hosted agents
+  - stage: runscriptonmicrosofthostedagents
     displayName: microsoftagent
     jobs:
       - job: runscript1
