@@ -1,0 +1,16 @@
+name: testing shell script on microsoft hosted agent
+trigger:
+- master
+stages:
+  - stage: runscript
+    displayName: runscript
+    jobs:
+      - job: runshellscript
+        displayName: runshellscript
+        pool: 
+          default
+      
+        steps:
+          - task: ShellScript@2  
+            inputs:
+              scriptPath: 'shell.sh'
