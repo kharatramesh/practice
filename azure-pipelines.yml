@@ -1,0 +1,15 @@
+name: testing shell script on microsoft hosted agent
+trigger:
+- main
+stages:
+  - stage: runscript
+    displayName: runscript
+    jobs:
+      - job: runshellscript
+        displayName: runshellscript
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - task: ShellScript@2  
+            inputs:
+              scriptPath: 'shell.sh'
