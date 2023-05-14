@@ -1,6 +1,6 @@
 name: testing shell script on microsoft hosted agent
 trigger:
-- main
+- master
 stages:
   - stage: runscript
     displayName: runscript
