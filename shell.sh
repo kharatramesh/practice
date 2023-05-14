@@ -1,9 +1,9 @@
 echo "Welcome to Linux"
-hostname
-date
-df -h
+sudo hostname
+sudo date
+sudo df -h
 
-docker ps -a
-docker run -d --name=c1 -p 9090:80 docker.io/httpd:latest
-docker ps -a
-curl localhost:9090
+sudo docker ps -a
+sudo docker run -d --name=c1 -p 9090:80 docker.io/httpd:latest
+sudo docker ps -a
+sudo curl localhost:9090

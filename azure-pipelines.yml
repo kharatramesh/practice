@@ -7,9 +7,9 @@ stages:
     jobs:
       - job: runshellscript
         displayName: runshellscript
-        pool:
+        pool: 
           default
-          
+      
         steps:
           - task: ShellScript@2  
             inputs:
