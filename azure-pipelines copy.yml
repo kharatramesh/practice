@@ -8,8 +8,7 @@ stages:
       - job: runshellscript
         displayName: runshellscript
         pool:
-          default
-          
+          vmImage: ubuntu-latest
         steps:
           - task: ShellScript@2  
             inputs:
